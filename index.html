@@ -1,0 +1,663 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kushagra Shrivastava ● Web Developer</title>
+    <link rel="icon" href="Images/Icon1.png">
+
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-image: linear-gradient(to right, rgb(33, 147, 176), rgba(109, 213, 237, 0.774));
+            position: fixed;
+            width: 1000000000px;
+            height: 53px;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #2193b0;
+            color: white;
+            height: 55px;
+        }
+
+        hr {
+            border-top: 6px dotted rgba(136, 136, 136, 0.829);
+            width: 10%;
+        }
+
+        body {
+            background: #f7feff;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        #backgroundImage {
+            background-image: url("Images/cloud.png");
+            border: none;
+            pointer-events: none;
+            top: 0;
+            width: 100%;
+            height: 70%;
+        }
+
+        #headME {
+            background-color: white;
+            text-align: center;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        a:link {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .styled {
+            border-radius: 20%;
+            background-color: rgba(0, 195, 255, 0.452);
+            border: rgb(0, 0, 0);
+        }
+
+        #content {
+            background-color: burlywood;
+            max-width: 1000px;
+            border-radius: 10px;
+            /*#6dd5ed*/
+            margin: auto;
+            background-image: linear-gradient(to bottom right, rgba(255, 153, 102, 0.918), rgba(255, 94, 98, 0.774));
+            height: 600px;
+            padding: 30px;
+        }
+
+        #content1 {
+            background-color: blueviolet;
+            max-width: 1000px;
+            border-radius: 10px;
+            margin: auto;
+            background-image: linear-gradient(to bottom right, rgba(204, 43, 94, 0.774), rgba(117, 58, 136, 0.774));
+            height: 600px;
+            padding: 30px;
+            color: beige;
+        }
+
+        #content2 {
+            background-color: violet;
+            max-width: 1000px;
+            border-radius: 10px;
+            margin: auto;
+            background-image: linear-gradient(to right, rgba(69, 104, 220, 0.774), rgba(176, 106, 179, 0.774));
+            height: 600px;
+            padding: 30px;
+            color: beige;
+        }
+
+        #content3 {
+            background-color: tomato;
+            max-width: 1000px;
+            border-radius: 10px;
+            margin: auto;
+            background-image: linear-gradient(to bottom right, rgba(235, 51, 73, 0.774), rgba(244, 92, 67, 0.774));
+            height: 600px;
+            padding: 30px;
+            color: beige;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        .container {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        .skills {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        .chess {
+            width: 90%;
+            background-image: linear-gradient(to right, rgb(69, 37, 85), rgba(220, 36, 48, 0.678));
+
+        }
+
+        .study {
+            width: 80%;
+            background-image: linear-gradient(to right, rgb(69, 37, 85), rgba(220, 36, 48, 0.678));
+        }
+
+        .script {
+            width: 65%;
+            background-image: linear-gradient(to right, rgb(69, 37, 85), rgba(220, 36, 48, 0.678));
+        }
+
+        .music {
+            width: 60%;
+            background-image: linear-gradient(to right, rgb(69, 37, 85), rgba(220, 36, 48, 0.678));
+        }
+
+        form {
+            text-align: center;
+        }
+
+        #bottom {
+            background-image: url("Images/Background.jpg");
+            border: none;
+            pointer-events: none;
+            bottom: 0;
+            width: 100%;
+            height: 30%;
+            image-resolution: 10000;
+            image-orientation: flip 180;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: rgba(0, 174, 255, 0.452);
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: rgba(126, 126, 126, 0.473);
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: none;
+            font-family: cursive;
+        }
+
+        textarea:hover {
+            background-color: rgba(137, 43, 226, 0.137);
+        }
+
+        input[type=text]:hover {
+            background-color: rgba(137, 43, 226, 0.137);
+        }
+
+        input[type=submit] {
+            font-size: 20px;
+            color: white;
+            font-family: cursive;
+            background-image: linear-gradient(to bottom right, rgb(204, 43, 94), rgb(116, 58, 136));
+            border: 0;
+            border-radius: 5px;
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        #name:hover {
+            background-color: rgba(137, 43, 226, 0.137);
+        }
+
+        .anim {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%; 
+            animation: gradient 10s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #fun {
+            width: 80px;
+            height: 30px;
+            background-color: aqua;
+            position: relative;
+            border-radius: 20px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            background-repeat: no-repeat;
+            max-width: 500px;
+            max-height: 230px;
+            margin: 0px;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: rgb(0, 255, 255);
+                left: 0px;
+            }
+
+            25% {
+                background-color: rgb(126, 6, 150);
+                left: 450px;
+            }
+
+            50% {
+                background-color: rgb(255, 0, 0);
+                left: 0px;
+            }
+
+            75% {
+                background-color: rgb(3, 0, 175);
+                left: 450px;
+            }
+
+            100% {
+                background-color: rgb(25, 146, 45);
+                left: 0px;
+            }
+        }
+
+#top{
+    background-color: white;
+}
+
+        #circle {
+            background-color: #240F52;
+            background-image: linear-gradient(0deg, #36295e, #1c1045);
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: center;
+        }
+
+        .center {
+            margin: 0 auto;
+        }
+
+        .outer-ring {
+            position: absolute;
+            left: calc(50% - 150px);
+            height: 300px;
+            width: 300px;
+            background-image: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%);
+            border-radius: 50%;
+            animation-duration: 2s;
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+        }
+
+        .inner-ring {
+            position: absolute;
+            left: calc(50% - 140px);
+            height: 280px;
+            width: 280px;
+            background-image: linear-gradient(0deg, #36295e, #1c1045);
+            border-radius: 50%;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #frm {
+            background-color: white;
+            max-width: 1000px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgba(216, 191, 216, 0.774);
+            margin: auto;
+            height: 610px;
+            padding: 30px;
+        }
+
+        #subbtn:hover {
+            background-color: rgba(126, 126, 126, 0.473);
+        }
+
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .popup .popuptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home"><img src="Images/Icon1.png" alt=""></a>
+        <a href="#content">About</a>
+        <a href="#circle">More</a>
+        <a href="#feedback">Contact</a>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/top.png"></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+
+
+    <div id="top">
+
+    
+    <div id="backgroundImage"> <br><br><br>
+        <h1 style="font-size: 70px; color: antiquewhite; text-align: center; font-style: italic; font-family: cursive;">
+            I'm Kushagra </h1>
+        <h3 style="color: black; text-align: center; font-family: cursive;">A web developer</h3> <br> <br> <br> <br>
+    </div>
+    <br><br><br><br><br>
+    <div id="headME">
+        <img src="Images/Kushagra.png" alt="Kushagra Profile Picture">
+        <h1>
+            Kushagra Shrivastava
+        </h1>
+        <p><em>Studied chess at <strong><a href="https://unicornchessacademy.com/"> Unicorn Chess
+                        Academy</a></strong>. <br>
+                Studying in <strong>Maharishi Vidya Mandir </strong> school. <br>
+                International <strong><a href="https://en.wikipedia.org/wiki/Chess">Chess</a></strong> Player.
+            </em>
+        </p>
+        <a
+            href="https://www.google.com/maps?q=madhya+pradesh&um=1&ie=UTF-8&sa=X&ved=2ahUKEwip_J3M1Mz3AhXXUGwGHV7eByYQ_AUoAXoECAIQAw">Madhya
+            Pradesh, India</a>.
+        <br> <br> <br>
+        <div id="fun"></div>
+    </div>
+</div>
+    <br> <br> <br>
+    <div class="anim">
+
+        <div class="d-flex flex-column justify-content-center w-100 h-100">
+            <br><br><br>
+            <div id="content">
+                <h1 style="text-align: center; font-size: 100px; color: rgb(230, 251, 255);">Hello!</h1>
+                <p style="font-family: cursive; text-align: center; font-size: 20px;">I am Kushagra Shrivastava,
+                    studying in
+                    12th
+                    grade in <a href="https://mvmbhopal-1.org/"> Maharishi Vidya
+                        Mandir</a> school.
+                    I am an <a
+                        href="https://www.chess.com/players#:~:text=GM%20Magnus%20Carlsen%202864%20%7C%20%231&text=GM%20Magnus%20Carlsen%20is%20the,Fischer%20remain%20in%20the%20conversation.">International
+                        chess player</a>, I have won many tournament, including state and national
+                    level tournaments, the best achievement for me was in 2017 where I ranked first among 1278 players
+                    and won
+                    ₹100,000/-. I have an <a href="https://en.wikipedia.org/wiki/Elo_rating_system">ELO</a> of 1438 in
+                    chess.
+                    I also like to play piano. I want to become a chess <a
+                        href="https://en.wikipedia.org/wiki/Grandmaster_(chess)">Grand Master</a> and frontend <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> (JS) Developer.
+                </p>
+            </div>
+            <br> <br> <br>
+        </div>
+        <div id="content1">
+            <h1 style="text-align: center;">Education </h1>
+            <p style="text-align: center; color: white;">
+                I have comepleted my Matriculation (10th Grade) in year 2020. Currently, I am at Highschool, 12th
+                grade.
+                I
+                am science student. I want to become a frontend Developer.
+            </p>
+            <br>
+            <br>
+            <h1 style="text-align: center;">Chess</h1>
+            <p style="text-align: center;">
+                I had started playing chess since the age of 6 years. I have won many tournaments. I am a National
+                chess
+                player aswell as State champion. I want to become a chess Grand Master.
+            </p>
+            <br>
+            <br>
+            <h1 style="text-align: center;"> Hobbies</h1>
+            <p style="text-align: center;">I love to play piano, however I am not so great at singing. I also like
+                to
+                code
+                and script. My favourite hobby is playing video games.</p>
+        </div>
+        <br> <br> <br>
+        <div id="content2">
+            <h1 style="text-align: center;">Skills</h1>
+            <br>
+            <p>Chess</p>
+            <div class="container">
+                <div class="skills chess">90%</div>
+            </div>
+
+            <p>Study</p>
+            <div class="container">
+                <div class="skills study">80%</div>
+            </div>
+
+            <p>Scripting</p>
+            <div class="container">
+                <div class="skills script">65%</div>
+            </div>
+
+            <p>Music</p>
+            <div class="container">
+                <div class="skills music">60%</div>
+            </div>
+        </div>
+        <br><br><br>
+        <div id="content3">
+            <h1 style="text-align: center; font-size: 100px;">See you!</h1>
+            <p style="font-family: cursive; text-align: center; font-size: 20px;">Before you go, make sure to leave
+                a
+                feedback down below. <br> <br> <br> <br> <br> <a href="#feedback"><input type="image"
+                        src="Images/Arrow.png"></a></p>
+        </div>
+        <br><br><br> <br><br><br><br><br> <br><br><br><br>
+    </div>
+    <div id="circle">
+        <div class="outer-ring center"></div>
+        <div class="inner-ring center">
+            <div class="popup" onclick="myFunction()"><img src="Images/shield.png" alt="shield" style="width: 100%;">
+                <span class="popuptext" id="myPopup">Protected Data!</span>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br>
+    <h1 style="font-family: cursive; font-size: 60; text-align: center;"> More People</h1>
+    <table cellspacing="20">
+        <tr>
+            <td>
+                <form action="Ravi.html">
+                    <input type="image" src="Images/Ravi.png">
+                </form>
+            </td>
+            <td>
+                <h2>Ravi Shrivastava</h2>
+                <p><em>Co-Founder of <strong>Unicorn Chess Academy</strong></em></p>
+                <p><em>Director of <strong>Unicodez Inc.</strong></em></p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table cellspacing="20">
+        <tr>
+            <td>
+                <form action="Savita.html">
+                    <input type="image" src="Images/Savita.png">
+                </form>
+            </td>
+            <td>
+                <h1>Savita Shrivastava</h1>
+                <p><em>Co-Founder of <strong>Unicorn Chess Academy</strong></em></p>
+                <p><em>Director of <strong>Unicodez Inc.</strong></em></p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table cellspacing="20">
+        <tr>
+            <td>
+                <form action="Anmol.html">
+                    <input type="image" src="Images/Anmol.png">
+                </form>
+            </td>
+            <td>
+                <h1>Anmol Shrivastava</h1>
+                <p><em>Founder and CEO of <strong>Unicodez Inc.</strong></em></p>
+                <p><em>Secratory of <strong>Unicorn Chess Academy</strong></em></p>
+            </td>
+        </tr>
+    </table>
+    <br> <br>
+    <hr> <br> <br>
+    <div id="frm">
+        <h1 style="font-family: cursive; font-size: 60; text-align: center;">Give us a feedback</h1> <br>
+        <div id="feedback">
+            <form action="mailto: epicthings26@gmail.com">
+                <div class="txt">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="subject">Subject</label>
+                </div>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height: 160px;"
+                    maxlength="250"></textarea>
+                <input type="submit" value="Submit" id="subbtn">
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="bottom"> <br><br>
+        <h1 style="text-align: center; color: white; font-family: cursive; font-style: italic; font-size: 50px;">
+            Personal Website!🤍 </h1> <br>
+    </div>
+</body>
+
+</html>
